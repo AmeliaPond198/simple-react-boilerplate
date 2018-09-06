@@ -33,7 +33,7 @@ class App extends Component {
             and save to reload.
           </p>
         }
-        <Label enableLogo={this.enableLogo} />
+        <Label number={10} enableLogo={this.enableLogo} />
       </div>
     );
   }

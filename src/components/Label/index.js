@@ -1,10 +1,17 @@
 import React from 'react';
 import './styles.css';
+import PropTypes from 'prop-types';
 
-const Label = ({ enableLogo }) => (
+const Label = ({ enableLogo, number }) => (
   <div className="test" onClick={() => enableLogo()}>
-    Hello World
+    Number:
+    {number}
   </div>
 );
+
+Label.propTypes = {
+  enableLogo: PropTypes.func,
+  number: PropTypes.number,
+};
 
 export default Label;
