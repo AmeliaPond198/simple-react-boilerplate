@@ -1,12 +1,12 @@
 import React from 'react';
-import './styles.css';
 import PropTypes from 'prop-types';
+import { Button } from './styles';
 
 const Label = ({ enableLogo, number }) => (
-  <div className="test" onClick={() => enableLogo()}>
+  <Button onClick={() => enableLogo()}>
     Number:
     {number}
-  </div>
+  </Button>
 );
 
 Label.propTypes = {
