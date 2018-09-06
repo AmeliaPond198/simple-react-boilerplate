@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Button = styled.div`
   border-radius: 3px;
@@ -9,4 +9,8 @@ export const Button = styled.div`
   border: 2px solid #81D8F7;
   display: inline-block;
   cursor: pointer;
+  ${props => props.full && css`
+    background: #81D8F7;
+    color: white;
+  `}
 `;
