@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import { Button } from './styles';
 
 const Label = ({ enableLogo, number }) => (
-  <Button onClick={() => enableLogo()}>
+  <Button
+    opacity={0.5}
+    notAllowed
+    onClick={() => enableLogo()}
+  >
     Number:
     {number}
   </Button>
